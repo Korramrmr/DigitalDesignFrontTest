@@ -1,1 +1,1 @@
-Тестовое задание для Frontend Школы в Digital Design
+Тестовое задание для школы Frontend-разработки в Digital Design
