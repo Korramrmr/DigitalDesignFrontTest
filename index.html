@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
+  <title>Каталог - Digital Design Test Task</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+
+    <nav class="menu">
+      <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#rings" class="menu__link main__link">Кольца</a></li>
+        <li class="menu__item"><a href="#pendants" class="menu__link main__link">Подвески</a></li>
+        <li class="menu__item"><a href="#earrings" class="menu__link main__link">Серьги</a></li>
+        <li class="menu__item"><a href="#bracelets" class="menu__link main__link">Браслеты</a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle">
+      <input type="checkbox" id="theme-toggle" class="check theme-toggle">
+      <span class="switch"></span>
+      <span class="slider"></span>
+    </div>
+
+  </header>
+
+  <div class="container-for-btn-top">
+    <a href="#" class="scroll-to-top-btn"></a>
+  </div>
+
+
+  <main class="main">
+    <div class="main__title__container">
+      <h1 class="title_main">Городские <span>минималистичные</span> украшения</h1>
+    </div>
+
+    <section id="rings" class="market__section">
+      <h2 class="card__title">Кольца</h2>
+      <div class="card-container"></div>
+    </section>
+
+    <section id="pendants" class="market__section">
+      <h2 class="card__title">Подвески</h2>
+      <div class="card-container"></div>
+    </section>
+
+    <section id="earrings" class="market__section">
+      <h2 class="card__title">Серьги</h2>
+      <div class="card-container"></div>
+    </section>
+
+    <section id="bracelets" class="market__section">
+      <h2 class="card__title">Браслеты</h2>
+      <div class="card-container"></div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div id="modal-content" class="modal-content">
+        <span class="close">&times;</span>
+        <h3 class="modal-product-title"></h3>
+        <form id="purchase-form" class="purchase-form">
+          <label for="quantity">Количество:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+
+          <p class="form__text">Выберите цвет (материал):</p>
+          <div class="materials_color">
+            <input class="radiobtn" type="radio" id="gold" name="color" checked>
+            <label for="gold" class="form__radio">
+              <span class="radio_button"></span>
+              <span class="radiobtn__text"></span> Золото
+            </label>
+
+            <input class="radiobtn" type="radio" id="white_gold" name="color">
+            <label for="white_gold" class="form__radio">
+              <span class="radio_button"></span>
+              <span class="radiobtn__text"></span> Белое золото
+            </label>
+
+            <input class="radiobtn" type="radio" id="silver" name="color">
+            <label for="silver" class="form__radio">
+              <span class="radio_button"></span>
+              <span class="radiobtn__text"></span> Серебро
+            </label>
+          </div>
+
+          <label for="comment">Комментарий (не более 2000 символов):</label>
+          <textarea id="comment" name="comment" maxlength="2000"></textarea>
+
+          <div class="button">
+            <input type="submit" class="btn_modal" value="Купить">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+
+    <div class="contacts">
+      <ul>
+        <li><a href="mailto:gokukorra@gmail.com">gokukorra@gmail.com</a></li>
+        <li><a href="https://github.com/Korramrmr" target="_blank">Github</a></li>
+
+      </ul>
+    </div>
+
+    <div class="footer__about">
+      <p>by Kristina Chernienko</p>
+      <p>Фотографии и шрифт используются <span class="usage-notice">only for personal use</span> исключительно для
+        технического задания.</p>
+    </div>
+
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item"><a href="#rings" id="main__link" class="footer__menu-link main__link">Кольца</a>
+        </li>
+        <li class="footer__menu-item"><a href="#pendants" id="main__link"
+            class="footer__menu-link main__link">Подвески</a></li>
+        <li class="footer__menu-item"><a href="#earrings" id="main__link"
+            class="footer__menu-link main__link">Серьги</a></li>
+        <li class="footer__menu-item"><a href="#bracelets" id="main__link"
+            class="footer__menu-link main__link">Браслеты</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
