@@ -290,11 +290,11 @@ h1 {
 }
 
 textarea {
-  resize: none; /* Изменено на "none" */
-  height: 100px; /* Добавлено */
-  width: 100%; /* Добавлено */
-  padding: 10px; /* Добавлено */
-  box-sizing: border-box; /* Добавлено */
+  resize: none; 
+  height: 100px; 
+  width: 100%; 
+  padding: 10px; 
+  box-sizing: border-box; 
 }
 
 .materials_color {
